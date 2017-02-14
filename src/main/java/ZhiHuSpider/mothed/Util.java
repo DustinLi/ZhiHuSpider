@@ -1,5 +1,7 @@
 package ZhiHuSpider.mothed;
 
+import ZhiHuSpider.bean.ZhiHuBean;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -9,14 +11,11 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import ZhiHuSpider.bean.ZhiHuBean;
-
 public class Util {
 
 	public static void main(String args[]){
-		while(true){
-			System.out.println(SendGet("https://www.zhihu.com/people/yao-cheng-46"));
-		}
+
+		System.out.println(SendGet("https://www.baidu.com/"));
 
 	}
 	public static String SendGet(String url) {
