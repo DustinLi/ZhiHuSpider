@@ -15,23 +15,7 @@ public class WeiboSpider {
     public static void main(String[] args) throws IOException, InterruptedException {
 //        String url = "http://m.weibo.cn/container/getIndex?uid=1415334141&luicode=10000011&lfid=1076031415334141&sudaref=m.weibo.cn&retcode=6102&type=uid&value=1415334141&containerid=1076031415334141";
 //        String uid = "5465081672";
-        String[] strs = {
-                "2351693951"
-                , "5582749870"
-                , "1756627157"
-                , "2441478537"
-                , "1666143645"
-                , "1610219955"
-                , "1880883723"
-                , "1402602034"
-                , "2930770521"
-                , "5586965954"
-                , "1715077822"
-                , "1442054902"
-                , "3360031512"
-                , "3939625541"
-                , "2569274225"
-                , "1344668552"
+        String[] strs = {"1344668552"
                 , "1775109112"
                 , "2175796227"
                 , "1238543194"
