@@ -33,10 +33,10 @@ public class JsoupUtils {
 
     public static void main(String[] args) {
         for (int i = 0; i < 10000; i++) {
-            String urlWWwwweibo = "http://m.weibo.cn/container/getIndex?uid=2351693951&luicode=10000011&lfid=1076032351693951&sudaref=m.spider.cn&retcode=6102&type=uid&value=2351693951&containerid=1076032351693951";
+            String urlWWwwweiboTestMaster = "http://m.weibo.cn/container/getIndex?uid=2351693951&luicode=10000011&lfid=1076032351693951&sudaref=m.spider.cn&retcode=6102&type=uid&value=2351693951&containerid=1076032351693951";
 //		String url="https://www.baidu.com/";
 //		String url="http://s.weibo.com/user/%25E4%25B8%258D%25E6%258B%2594%25E5%2585%2585%25E7%2594%25B5%25E5%2599%25A8&Refer=index";
-            System.out.println(getDocument(urlWWwwweibo));
+            System.out.println(getDocument(urlWWwwweiboTestMaster));
             System.out.println("测试git的删除、修改、添加");
         }
 
