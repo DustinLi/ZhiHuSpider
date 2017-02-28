@@ -24,6 +24,11 @@ public class JsoupUtils {
             return document;
         } catch (Exception e) { // 链接超时等其他情况
             System.out.println("出现链接超时等其他情况");
+            try {
+                Thread.sleep(300000);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
             HttpUtils.setProxyIp();// 换代理ip
             getDocument(url);// 继续爬取网页
         }

@@ -60,13 +60,18 @@ public class MyHtmlTool {
 
     public static void main(String[] args) {
 
-        String htmlCleaned = JsoupUtils.getDocument("http://www.rrjc.com/login.do");
+//        String htmlCleaned = JsoupUtils.getDocument("http://www.xicidaili.com/");
+        String htmlCleaned = JsoupUtils.getDocument("http://www.kuaidaili.com/free/outha/2/");
         System.out.println(htmlCleaned);
-//        String htmlCleaned = MyHtmlTool.remainTag(html, "tr", "td");
+        htmlCleaned = MyHtmlTool.remainTag(htmlCleaned, "tr", "td");
         htmlCleaned = MyHtmlTool.removeCtrl(htmlCleaned);
         htmlCleaned = MyHtmlTool.removeNBSP(htmlCleaned);
         System.out.println(htmlCleaned);
-        List<String[]> sresult = MyHtmlTool.matchByGroup(htmlCleaned, "<tr><td></td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>");
+//        List<String[]> sresult = MyHtmlTool.matchByGroup(htmlCleaned, "<tr><td></td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>");
+        List<String[]> sresult = MyHtmlTool.matchByGroup(htmlCleaned, "<tr><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>");
+        for (String[] strs : sresult) {
+            System.out.println(strs[1] + ":" + strs[2]);
+        }
         System.out.println(sresult);
     }
 }
